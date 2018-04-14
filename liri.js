@@ -34,7 +34,7 @@ switch (process.argv[2]) {
 		break;
 	default:
 		console.log(
-`
+			`
 To use this app, run one of the following commands
 1) node liri.js my-tweets --> Show Last 20 Tweets of j0shc0ast.
 2) node liri.js spotify-this-song <song name here> --> Get Song Info.
@@ -47,8 +47,21 @@ To use this app, run one of the following commands
 function doIt() {
 	fs.readFile("random.txt", "utf8", function (error, data) {
 		if (!error) {
-			let songName = data.match(/".*?"/);
-			spotifyMe(songName);
+			//let songName = data.match(/".*?"/);
+			let dataArray = data.split(",");
+			switch (dataArray[0]) {
+				case "my-tweets":
+					myTweets();
+					break;
+				case "spotify-this-song":
+					spotifyMe(dataArray[1]);
+					break;
+				case "movie-this":
+					movieThis(dataArray[1]);
+					break;
+				default:
+					console.log(`please use this format --> spotify-this-song,"I Want it That Way"`)
+			}
 		} else {
 			return console.log(error);
 		}

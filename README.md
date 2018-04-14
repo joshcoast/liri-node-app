@@ -1,7 +1,14 @@
 # liri-node-app
 LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
+To use this app, run one of the following commands
+1) node liri.js my-tweets --> Show Last 20 Tweets of j0shc0ast.
+2) node liri.js spotify-this-song <song name here> --> Get Song Info.
+3) node liri.js movie-this <movie name here> -- Get Movie Info
+4) node liri.js do-what-it-says --> Takes a Command from random.txt
+
 ------- .env file ---------
+
 Create a file named `.env` in the root, add the following to it, replacing the values with your API keys (no quotes) once you have them:
 
 ```js
