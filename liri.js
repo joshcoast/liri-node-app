@@ -33,7 +33,15 @@ switch (process.argv[2]) {
 		doIt();
 		break;
 	default:
-		console.log("default :(");
+		console.log(
+`
+To use this app, run one of the following commands
+1) node liri.js my-tweets --> Show Last 20 Tweets of j0shc0ast.
+2) node liri.js spotify-this-song <song name here> --> Get Song Info.
+3) node liri.js movie-this <movie name here> -- Get Movie Info
+4) node liri.js do-what-it-says --> Takes a Command from random.txt
+`
+		);
 }
 
 function doIt() {
