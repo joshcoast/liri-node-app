@@ -7,7 +7,11 @@ To use this app, run one of the following commands
 3) node liri.js movie-this <movie name here> -- Get Movie Info
 4) node liri.js do-what-it-says --> Takes a Command from random.txt
 
-------- .env file ---------
+## Setup
+
+Run `npm init` and `npm install` from the root directory of the project.
+
+## .evn file
 
 Create a file named `.env` in the root, add the following to it, replacing the values with your API keys (no quotes) once you have them:
 
