@@ -4,7 +4,7 @@ LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a co
 To use this app, run one of the following commands
 1) node liri.js my-tweets --> Show Last 20 Tweets of j0shc0ast.
 2) node liri.js spotify-this-song "your song name here" --> Get Song Info.
-3) node liri.js movie-this "your movie name here" -- Get Movie Info
+3) node liri.js movie-this "your movie name here" --> Get Movie Info
 4) node liri.js do-what-it-says --> Takes a Command from random.txt
 
 ## Setup
